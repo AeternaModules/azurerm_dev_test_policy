@@ -1,5 +1,5 @@
-resource "azurerm_dev_test_policy" "dev_test_policys" {
-  for_each = var.dev_test_policys
+resource "azurerm_dev_test_policy" "dev_test_policies" {
+  for_each = var.dev_test_policies
 
   evaluator_type      = each.value.evaluator_type
   lab_name            = each.value.lab_name

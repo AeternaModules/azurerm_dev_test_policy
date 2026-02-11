@@ -1,6 +1,6 @@
-variable "dev_test_policys" {
+variable "dev_test_policies" {
   description = <<EOT
-Map of dev_test_policys, attributes below
+Map of dev_test_policies, attributes below
 Required:
     - evaluator_type
     - lab_name
