@@ -1,3 +1,7 @@
+output "dev_test_policies_id" {
+  description = "Map of id values across all dev_test_policies, keyed the same as var.dev_test_policies"
+  value       = { for k, v in azurerm_dev_test_policy.dev_test_policies : k => v.id }
+}
 output "dev_test_policies_description" {
   description = "Map of description values across all dev_test_policies, keyed the same as var.dev_test_policies"
   value       = { for k, v in azurerm_dev_test_policy.dev_test_policies : k => v.description }
